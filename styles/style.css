@@ -189,19 +189,19 @@ width: 101%;
    justify-content: center;
 }
 
-#slides .slide_1 {
+#slides .slide-1 {
    background-image: url(../styles/images/Chevrolet-Cruze-.jpg);
    background-size: cover;
 }
-#slides .slide_2 {
+#slides .slide-2 {
    background-image: url(../styles/images/spark.jpg);
    background-size: cover;
 }
-#slides .slide_3 {
+#slides .slide-3 {
    background-image: url(../styles/images/equinox.jpg);
    background-size: cover;
 }
-#slides .slide_4 {
+#slides .slide-4 {
    background-image: url(../styles/images/coloradotwin.jpg);
    background-size: cover;
 }
@@ -441,43 +441,43 @@ a.button {
     
 }
 
-.inner_footer {
+.inner-footer {
     display: block;
     margin: 0 auto;
     width: 1400px;
     height: 10%;
 }
 
-.inner_footer .logo_container{
+.inner-footer .logo_container{
     width: 36%;
     float: left;
     display: block;
 }
 
-.inner_footer .logo_container p{
+.inner-footer .logo_container p{
     color: #fff;
     margin-top: 50px;
     font-family: sans-serif;
     font-size: 15px;
 }
 
-.inner_footer .logo_container img{
+.inner-footer .logo_container img{
     width: 150px;
     height: auto;
 }
 
-.inner_footer .footer_third{
+.inner-footer .footer_third{
     width: calc(21.6666666667% - 20px);
     margin-right: 10px;
     float: left;
     height: 100%
 }
 
-.inner_footer .footer_third:last-child{
+.inner-footer .footer_third:last-child{
     margin-right: 0;
 }
 
-.inner_footer .footer_third h1{
+.inner-footer .footer_third h1{
     font-family: sans-serif;
     font-size: 20px;
     color: #959B8D;
@@ -486,7 +486,7 @@ a.button {
     margin-bottom: 20px;
 }
 
-.inner_footer .footer_third a{
+.inner-footer .footer_third a{
     font-family: sans-serif;
     font-size: 15px;
     color: #fff;
@@ -496,7 +496,7 @@ a.button {
     margin-bottom: 20px;
 }
 
-.inner_footer .footer_third table{
+.inner-footer .footer_third table{
     font-family: sans-serif;
     font-size: 13px;
     color: #fff;
@@ -505,13 +505,13 @@ a.button {
     height: 150px;
 }
 
-.inner_footer .footer_third li{
+.inner-footer .footer_third li{
     display: inline-block;
     padding: 0 5px;
     font-size: 20px;
 }
 
-.inner_footer .footer_third span{
+.inner-footer .footer_third span{
     color: #fff;
     font-family: sans-serif;
     font-size: 12px;
