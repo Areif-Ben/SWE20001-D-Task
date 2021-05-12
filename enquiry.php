@@ -9,8 +9,8 @@
     <body>
     <?php
     include "include/header.php";
-	include "database.php";
-	$servername = "localhost";
+    include "database.php";
+    $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "enquiryform";
@@ -37,13 +37,13 @@
     if (mysqli_query($conn, $sql)) {
     }
     mysqli_close($conn);
-?>       
+    ?>       
 <div class="contact-section">
     <h1>Enquiry</h1>
   <div class="border"></div>
   <form class="contact-form" action="enquiry_process.php" onsubmit = "return main_func()" method="post">
-    <input type="text" class="contact-form-text" name="firstname_input" placeholder="First name" maxlength="25" minlength="2" required>
-    <input type="text" class="contact-form-text" name="lastname_input" placeholder="Last name" maxlength="25" minlength="2" required>
+    <input type="text" class="contact-form-text" name="firstname_input" placeholder="First name" required>
+    <input type="text" class="contact-form-text" name="lastname_input" placeholder="Last name" required>
           <input type="email" class="contact-form-text" name="email_input" placeholder="Email"  required>
          <fieldset>
             <legend>Address</legend>
@@ -69,7 +69,7 @@
          <option selected disabled value="default">Product</option>
          </select>
        </div>
-    <textarea class="contact-form-text" id="messageform" name="messageform_input" placeholder="What would you like to know about this product?"></textarea>
+    <textarea class="contact-form-text" id="messageform" name="messageform_input" placeholder="Comment..."></textarea>
     <input type="submit" class="contact-form-btn" value="Send">
   </form>
 </div>

@@ -1,4 +1,4 @@
-<? php
+<?php
  echo 
 "<header>
  <img class= 'comlogo' src='images/chevlogo.png' alt='' >
