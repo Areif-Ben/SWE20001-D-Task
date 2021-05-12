@@ -68,13 +68,13 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST") {
         $comment = test_input($_POST["messageform_input"]);
     }
 }
-    function test_input($data) 
-{
+function test_input($data)
+    {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
-}
+    }
 ?>
 <div class="contact-section">   
 <form class="contact-form" id="confirmform" method="post" action="insert.php">
@@ -142,6 +142,6 @@ echo $commentErr;echo "<br>"
 </form>
 </div>
 <?php
-include "include/footer.php";;
+include "include/footer.php"
 ?>
 
