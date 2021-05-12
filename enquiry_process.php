@@ -72,12 +72,12 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST") {
         $comment = test_input($_POST["messageform_input"]);
     }
 }
-function test_input($data)
+function test_input($comment): string
 {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
+    $comment = trim($comment);
+    $comment = stripslashes($comment);
+    $comment = htmlspecialchars($comment);
+    return $comment;
 }
 ?>
 <div class="contact-section">   
