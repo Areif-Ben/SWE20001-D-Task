@@ -1,8 +1,14 @@
+<head>
+    <meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
 <?php
-
+include "include/header.php";
 $firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr = $stateErr = $postcodeErr  = $phonenumberErr = $commentErr = " ";
 $firstname = $lastname =  $email =  $address = $city = $state = $postcode = $phonenumber = $comment = " ";
-include "include/header.php";
 if ($_SERVER ["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["firstname_input"])) {
         $firstnameErr = "First name cannot be empty";
@@ -69,12 +75,12 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST") {
     }
 }
 function test_input($data)
-    {
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
-    }
+}
 ?>
 <div class="contact-section">   
 <form class="contact-form" id="confirmform" method="post" action="insert.php">
@@ -145,3 +151,4 @@ echo $commentErr;echo "<br>"
 include "include/footer.php"
 ?>
 
+</body>
