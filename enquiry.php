@@ -54,9 +54,9 @@
 
             <p>State</p>
              <div class="select">
-               <select name="slct_input" id="state" >
+              <select name="slct_input" id="state" >
                <option value="choose" selected disabled>Choose an option...</option>
-               </select>		
+              </select>
              </div>
 <br>
             <label for="poskod">Postcode</label>
