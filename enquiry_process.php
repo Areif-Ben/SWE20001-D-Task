@@ -1,3 +1,12 @@
+<?php
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
@@ -7,14 +16,8 @@
 <body>
 <?php
 include "include/header.php";
-function test_input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-$firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr = $stateErr = $postcodeErr  = $phonenumberErr = $commentErr = " ";
+$firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr 
+= $stateErr = $postcodeErr  = $phonenumberErr = $commentErr = " ";
 $firstname = $lastname =  $email =  $address = $city = $state = $postcode = $phonenumber = $comment = " ";
 if ($_SERVER ["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["firstname_input"])) {

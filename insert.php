@@ -27,7 +27,8 @@ $phonenumber = $_POST["phonenumber_hidden"];
 $product = $_POST["product_hidden"];
 $comment = $_POST["comment_hidden"];
 $value = "INSERT INTO enquiry (firstname,lastname,email,house_address,city,state_,postcode,phonenumber,product,comment)
-VALUES ('$firstname', '$lastname', '$email',  '$address', '$city', '$state', '$postcode', '$phonenumber', '$product', '$comment')";
+VALUES ('$firstname', '$lastname', '$email',  '$address', '$city', '$state', 
+'$postcode', '$phonenumber', '$product', '$comment')";
 if (mysqli_query($conn, $value)) {
 }
 mysqli_close($conn);
