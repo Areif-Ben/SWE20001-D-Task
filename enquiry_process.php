@@ -1,12 +1,3 @@
-<?php
-function test_input($data): string
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-?>
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
@@ -15,6 +6,7 @@ function test_input($data): string
 </head>
 <body>
 <?php
+
 include "include/header.php";
 $firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr
 = $stateErr = $postcodeErr  = $phonenumberErr = $commentErr = " ";
@@ -79,6 +71,13 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST") {
     } else {
         $comment = test_input($_POST["messageform_input"]);
     }
+}
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
 ?>
 <div class="contact-section">   
