@@ -1,5 +1,5 @@
 <?php
-function test_input($data)
+function test_input($data) : string
 {
     $data = trim($data);
     $data = stripslashes($data);
@@ -16,7 +16,7 @@ function test_input($data)
 <body>
 <?php
 include "include/header.php";
-$firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr 
+$firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr
 = $stateErr = $postcodeErr  = $phonenumberErr = $commentErr = " ";
 $firstname = $lastname =  $email =  $address = $city = $state = $postcode = $phonenumber = $comment = " ";
 if ($_SERVER ["REQUEST_METHOD"] == "POST") {
@@ -64,10 +64,6 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST") {
         $postcodeErr = "Please enter your postcode number.";
     } elseif (!is_numeric($_POST["poskod_input"])) {
         $postcodeErr = "Postcode must be in numbers";
-    } elseif (strlen($_POST["poskod_input"]) > 5) {
-        $postcodeErr = "Postcode must contain 5 digits";
-    } elseif (strlen($_POST["poskod_input"]) < 5) {
-        $postcodeErr = "Postcode must contain 5 digits";
     } else {
         $postcode = test_input($_POST["poskod_input"]);
     }
