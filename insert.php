@@ -14,7 +14,7 @@ $password = "";
 $dbname = "enquiryform";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
-die("Connection Failed: " . mysqli_connect_error());
+    die("Connection Failed: " . mysqli_connect_error());
 }
 $firstname = $_POST["firstname_hidden"];
 $lastname = $_POST["lastname_hidden"];
@@ -30,19 +30,19 @@ $value = "INSERT INTO enquiry (firstname,lastname,email,house_address,city,state
 VALUES ('$firstname', '$lastname', '$email',  '$address', '$city', '$state', '$postcode', '$phonenumber', '$product', '$comment')";
 if (mysqli_query($conn, $value)) {
 }
-mysqli_close($conn);   
+mysqli_close($conn);
 ?>
 <div class="mainenquiry">
 <div class="overlay"></div>
 <div class="heading">
 <h1 class="head">THANK YOU FOR YOUR <span>ENQUIRY</span></h1>
-<h3 >We will contact you soon!</h3>	
+<h3 >We will contact you soon!</h3>
 <div class="btns">
 <a class="btn1" href="index.html">HOME</a>
 <a class="btn2" href="product.html">VIEW SHOWROOM</a>
-</div>	
 </div>
-</div>	
+</div>
+</div>
 <?php
 include "include/footer.php";
 ?>

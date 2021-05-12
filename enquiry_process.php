@@ -1,12 +1,3 @@
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
 <?php
 $firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr = $stateErr = $postcodeErr  = $phonenumberErr = $commentErr = " ";
 $firstname = $lastname =  $email =  $address = $city = $state = $postcode = $phonenumber = $comment = " ";
@@ -151,5 +142,4 @@ echo $commentErr;echo "<br>";
 <?php
 include "include/footer.php";
 ?>
-</body>
-</html>
+

@@ -15,7 +15,7 @@ $password = "";
 $dbname = "enquiryform";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
-die("Connection Failed: " . mysqli_connect_error());
+    die("Connection Failed: " . mysqli_connect_error());
 }
 echo "
 <table  class='content-table' style='margin-left:140px;'>
@@ -33,9 +33,9 @@ echo "
 </tr>
 ";
 $select = "SELECT * FROM enquiry ORDER BY product";
-$output = mysqli_query ($conn, $select);
+$output = mysqli_query($conn, $select);
 while ($row = mysqli_fetch_assoc($output)) {
-echo "
+    echo "
 <tr><td>{$row['firstname']}</td>
 <td>{$row['lastname']}</td>
 <td>{$row['email']}</td>

@@ -1,5 +1,6 @@
 <?php
- echo 
+
+ echo
 "<header>
  <img class= 'comlogo' src='images/chevlogo.png' alt='' >
  <nav id='main-nav'>
@@ -35,4 +36,3 @@
  </ul>
  </nav>
  </header>";
- ?>

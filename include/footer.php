@@ -1,4 +1,5 @@
 <?php
+
 echo
 "<footer>
 <div class='footer'>
@@ -11,6 +12,4 @@ or inaccurate, thus, the author(s) and web-master does not take any responsibili
 incorrect information disseminated or cited from this website.</p>   
 </div>
 </div>
-</footer>";
-?>
-        
+</footer>";        
