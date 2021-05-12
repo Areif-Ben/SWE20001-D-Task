@@ -12,7 +12,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "test1";
+    $dbname = "enquiryform";
     // create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     // check connection
@@ -42,8 +42,8 @@
         <h1 class="head">THANK YOU FOR YOUR <span>ENQUIRY</span></h1>
         <h3 >We will contact you soon!</h3>	
         <div class="btns">
-            <a class="btn1" href="index.php">HOME</a>
-            <a class="btn2" href="product.php">VIEW SHOWROOM</a>
+            <a class="btn1" href="index.html">HOME</a>
+            <a class="btn2" href="product.html">VIEW SHOWROOM</a>
         </div>	
 </div>
 </div>	
