@@ -1,5 +1,5 @@
 <?php
-function test_input($data) : string
+function test_input($data): string
 {
     $data = trim($data);
     $data = stripslashes($data);

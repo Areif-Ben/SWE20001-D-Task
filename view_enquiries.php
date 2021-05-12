@@ -33,9 +33,10 @@ echo "
 </tr>
 ";
 $select = "SELECT * FROM enquiry ORDER BY product";
-$output = mysqli_query ($conn, $select);
+exit($select)
+$output = mysqli_query($conn, $select);
 while ($row = mysqli_fetch_assoc($output)) {
-echo "
+    echo "
 <tr><td>{$row['firstname']}</td>
 <td>{$row['lastname']}</td>
 <td>{$row['email']}</td>
