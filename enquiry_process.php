@@ -1,4 +1,5 @@
 <?php
+
 $firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr = $stateErr = $postcodeErr  = $phonenumberErr = $commentErr = " ";
 $firstname = $lastname =  $email =  $address = $city = $state = $postcode = $phonenumber = $comment = " ";
 include "include/header.php";
@@ -67,7 +68,8 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST") {
         $comment = test_input($_POST["messageform_input"]);
     }
 }
-function test_input($data) {
+    function test_input($data) 
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
@@ -90,49 +92,49 @@ function test_input($data) {
 <p class="contact-form-text"><strong>First Name: </strong><?php echo $firstname; ?></p>
 <span style="color:red;">
 <?php
-echo $firstnameErr ;echo "<br>";;
+echo $firstnameErr ;echo "<br>"
 ?> </span>
 <p class="contact-form-text"><strong>Last Name: </strong><?php echo $lastname; ?></p>
 <span style="color:red;">
 <?php
-echo $lastnameErr;echo "<br>";;
+echo $lastnameErr;echo "<br>"
 ?> </span>
 <p class="contact-form-text"><strong>Email: </strong><?php echo $email; ?></p>
 <span style="color:red;">
 <?php
-echo $emailaddressErr;echo "<br>";;
+echo $emailaddressErr;echo "<br>"
 ?> </span>
 <p class="contact-form-text"><strong>Street Address: </strong><?php echo $address; ?></p>
 <span style="color:red;">
 <?php
-echo $addressErr;echo "<br>";;
+echo $addressErr;echo "<br>"
 ?> </span>
 <p class="contact-form-text"><strong>City: </strong><?php echo $city; ?></p>
 <span style="color:red;">
 <?php
-echo $cityErr;echo "<br>";;
+echo $cityErr;echo "<br>"
 ?> </span>
 <p class="contact-form-text"><strong>State: </strong><?php echo $state; ?></p>
 <span style="color:red;">
 <?php
-echo $stateErr;echo "<br>";;
+echo $stateErr;echo "<br>"
 ?> </span>
 <p class="contact-form-text"><strong>Postcode: </strong><?php echo $postcode; ?></p>
 <span style="color:red;">
 <?php
-echo $postcodeErr;echo "<br>";;
+echo $postcodeErr;echo "<br>"
 ?> </span>
 <p class="contact-form-text"><strong>Phone Number: </strong><?php echo $phonenumber; ?></p>
 <span style="color:red;">
 <?php
-echo $phonenumberErr;echo "<br>";;
+echo $phonenumberErr;echo "<br>"
 ?> </span>
-<p class="contact-form-text"><strong>Product: </strong><?php echo $_POST["product_input"]; ?></p>
+<p class="contact-form-text"><strong>Product: </strong><?php echo $_POST["product_input"] ?></p>
 <br> 
-<p class="contact-form-text"><strong>Comment: </strong><?php echo $comment; ?></p>
+<p class="contact-form-text"><strong>Comment: </strong><?php echo $comment ?></p>
 <span style="color:red;">
 <?php
-echo $commentErr;echo "<br>";;
+echo $commentErr;echo "<br>"
 ?> 
 </span>
 <input type="submit" class="contact-form-btn" value="Confirm"/>
