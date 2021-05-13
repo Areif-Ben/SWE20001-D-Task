@@ -20,6 +20,7 @@ if (!$conn) {
 echo "
 <table  class='content-table' style='margin-left:140px;'>
 <tr>
+<th>ID</th>
 <th>First Name</th>
 <th>Lastname</th>
 <th>E-mail</th>
@@ -32,11 +33,12 @@ echo "
 <th>Message</th>
 </tr>
 ";
-$select = "SELECT * FROM enquiry ORDER BY product";
+$select = "SELECT * FROM enquiry";
 $result = mysqli_query($conn, $select);
 while ($row = mysqli_fetch_assoc($result)) {
     echo "
-<tr><td>{$row['firstname']}</td>
+<tr><td>{$row['id']}</td>
+<td>{$row['firstname']}</td>
 <td>{$row['lastname']}</td>
 <td>{$row['email']}</td>
 <td>{$row['house_address']}</td>
