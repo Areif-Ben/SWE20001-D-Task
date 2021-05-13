@@ -35,7 +35,9 @@ echo "
 ";
 $select = "SELECT * FROM enquiry";
 $result = mysqli_query($conn, $select);
+$allRows = array();
 while ($row = mysqli_fetch_assoc($result)) {
+    $allRows[] = $row;
     echo "
 <tr><td>{$row['id']}</td>
 <td>{$row['firstname']}</td>
@@ -55,6 +57,7 @@ echo "
 </table>";
 echo
 include "include/footer.php";
+return $allRows;
 ?>     
 </body>
 </html>
