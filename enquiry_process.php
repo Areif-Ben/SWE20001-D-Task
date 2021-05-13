@@ -8,6 +8,7 @@
 <?php
 
 include "include/header.php";
+include "testinput.php";
 $firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr
 = $stateErr = $postcodeErr  = $phonenumberErr = $commentErr = " ";
 $firstname = $lastname =  $email =  $address = $city = $state = $postcode = $phonenumber = $comment = " ";
@@ -72,13 +73,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST") {
         $comment = test_input($_POST["messageform_input"]);
     }
 }
-function test_input($comment): string
-{
-    $comment = trim($comment);
-    $comment = stripslashes($comment);
-    $comment = htmlspecialchars($comment);
-    return $comment;
-}
+
 ?>
 <div class="contact-section">   
 <form class="contact-form" id="confirmform" method="post" action="insert.php">
