@@ -7,7 +7,6 @@
 <body>
 <?php
 
-include "include/header.php";
 $firstnameErr = $lastnameErr =  $emailaddressErr =  $addressErr = $cityErr
 = $stateErr = $postcodeErr  = $phonenumberErr = $commentErr = " ";
 $firstname = $lastname =  $email =  $address = $city = $state = $postcode = $phonenumber = $comment = " ";
@@ -145,11 +144,7 @@ echo $commentErr;echo "<br>"
 ?> 
 </span>
 <input type="submit" class="contact-form-btn" value="Confirm"/>
-<input type="button"  class="contact-form-btn" value="Back" />
 </form>
 </div>
-<?php
-include "include/footer.php"
-?>
 
 </body>
