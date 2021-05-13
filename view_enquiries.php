@@ -32,7 +32,7 @@ echo "
 ";
 $select = 'SELECT * FROM enquiry';
 $result = mysqli_query($conn, $select);
-while ($row = mysqli_fetch_assoc($result)) {
+while ($row = $result->fetch_assoc()) {
     echo "
 <tr><td>{$row['id']}</td>
 <td>{$row['firstname']}</td>
