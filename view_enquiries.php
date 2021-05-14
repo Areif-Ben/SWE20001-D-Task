@@ -32,6 +32,7 @@ echo "
 ";
 $select = 'SELECT * FROM enquiry';
 $result = mysqli_query($conn, $select);
+if (mysqli_num_rows($select)>=1){
 while ($row = mysqli_fetch_assoc($result)) {
     echo "
 <tr><td>{$row['id']}</td>
@@ -47,11 +48,9 @@ while ($row = mysqli_fetch_assoc($result)) {
 <td>{$row['comment']}</td>
 </tr>
 ";
-}
+}}
 echo "
 </table>";
 echo
 include "include/footer.php";
-    
-mysql_free_result($result);
 ?>
