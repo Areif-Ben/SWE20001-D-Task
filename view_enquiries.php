@@ -13,7 +13,7 @@ $username = "root";
 $password = "";
 $dbname = "enquiryform";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
-$select = 'SELECT * FROM enquiry';
+$select = "SELECT * FROM enquiry";
 $result = mysqli_query($conn, $select) or die(mysqli_error($conn));
 
 echo "
@@ -32,7 +32,7 @@ echo "
 <th>Message</th>
 </tr>
 ";
-while(null !== ($row = mysqli_fetch_assoc($result))) {
+while (null !== ($row = mysqli_fetch_assoc($result))) {
     echo "
 <tr><td>{$row['id']}</td>
 <td>{$row['firstname']}</td>
@@ -52,7 +52,6 @@ echo "
 </table>";
 echo
 include "include/footer.php";
-mysqli_free_result($result);
 
 mysqli_close($conn)
 ?>
