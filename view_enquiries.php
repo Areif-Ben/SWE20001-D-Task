@@ -31,8 +31,8 @@ echo "
 </tr>
 ";
 $select = 'SELECT * FROM enquiry';
-$result = mysqli_query($conn, $select) or die( mysqli_error($conn));
-while ($row = mysqli_fetch_array($result)) {
+$result = mysqli_query($conn, $select) or die(mysqli_error($conn));
+while(null !== ($row = mysqli_fetch_assoc($result))) {
     echo "
 <tr><td>{$row['id']}</td>
 <td>{$row['firstname']}</td>
