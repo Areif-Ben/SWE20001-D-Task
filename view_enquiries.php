@@ -13,6 +13,8 @@ $username = "root";
 $password = "";
 $dbname = "enquiryform";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
+$select = 'SELECT * FROM enquiry';
+$result = mysqli_query($conn, $select) or die(mysqli_error($conn));
 
 echo "
 <table  class='content-table' style='margin-left:140px;'>
@@ -30,8 +32,6 @@ echo "
 <th>Message</th>
 </tr>
 ";
-$select = 'SELECT * FROM enquiry';
-$result = mysqli_query($conn, $select) or die(mysqli_error($conn));
 while(null !== ($row = mysqli_fetch_assoc($result))) {
     echo "
 <tr><td>{$row['id']}</td>
@@ -52,4 +52,7 @@ echo "
 </table>";
 echo
 include "include/footer.php";
+mysqli_free_result($result);
+
+mysqli_close($conn)
 ?>
