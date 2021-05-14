@@ -32,7 +32,7 @@ echo "
 ";
 $select = 'SELECT * FROM enquiry';
 $result = mysqli_query($conn, $select);
-while ($row = $result->fetch_assoc()) {
+while ($row = mysqli_fetch_assoc($result)) {
     echo "
 <tr><td>{$row['id']}</td>
 <td>{$row['firstname']}</td>
@@ -52,4 +52,6 @@ echo "
 </table>";
 echo
 include "include/footer.php";
+    
+mysql_free_result($result);
 ?>
