@@ -1139,6 +1139,7 @@ div.parent .two {
 .push-45 .pull-45 .push-55 .pull-55 {
     position: relative;
   }
+}
 
   .hide-on-desktop {
     display: none !important;
