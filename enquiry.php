@@ -42,15 +42,15 @@
     <h1>Enquiry</h1>
   <div class="border"></div>
   <form class="contact-form" action="enquiry_process.php" onsubmit = "return main_func()" method="post">
-    <input type="text" class="contact-form-text" id="firstname" name="firstname_input" placeholder="First name" required>
-    <input type="text" class="contact-form-text" id="lastname" name="lastname_input" placeholder="Last name" required>
-          <input type="email" class="contact-form-text" id="emeil"  name="email_input" placeholder="Email"  required>
+    <input type="text" class="contact-form-text" id="firstname" name="firstname_input" placeholder="First name">
+    <input type="text" class="contact-form-text" id="lastname" name="lastname_input" placeholder="Last name">
+          <input type="email" class="contact-form-text" id="emeil"  name="email_input" placeholder="Email">
          <fieldset>
             <legend>Address</legend>
             <label for="Stradr">Street Adress</label>
-            <input type="text" class="contact-form-text" id="stradr" name="stradr_input" maxlength="40" required>
+            <input type="text" class="contact-form-text" id="stradr" name="stradr_input" maxlength="40">
             <label for="ctytwn">City / Town</label>
-            <input type="text" class="contact-form-text" id="city" maxlength="20" id="ctytwn" name="city_input" required>
+            <input type="text" class="contact-form-text" id="city" maxlength="20" id="ctytwn" name="city_input">
 
             <p>State</p>
              <div class="select">
@@ -60,9 +60,9 @@
              </div>
 <br>
             <label for="poskod">Postcode</label>
-            <input type="tel" class="contact-form-postcode" maxlength="5" id="poskod" name="poskod_input" required>
+            <input type="tel" class="contact-form-postcode" maxlength="5" id="poskod" name="poskod_input">
         </fieldset>
-   <input type="tel" class="contact-form-text" placeholder="Phone number" id="phoneno" name="phoneno_input" maxlength="10" required>
+   <input type="tel" class="contact-form-text" placeholder="Phone number" id="phoneno" name="phoneno_input">
       
        <div class="select">
          <select id="select" name="product_input" onchange="myFunction()">
@@ -80,7 +80,7 @@ include "include/footer.php";
     function namecheck() {
             "use strict";
             var errormsg1 = "\nFirst name cannot be empty\n";   // initialise error tags when not filled
-            var errormsg2 = "\nFirst name must contain alphabetic characters only\n";   // initialise error tags when not meet requirement
+            var errormsg2 = "\nFirst name must contain alphabetic characters only\n";  
 
             var pattern_1 = /^[A-Za-z]+$/;
 
@@ -287,7 +287,8 @@ include "include/footer.php";
             function main_func() {
             "use strict";
             var check = ""
-            var check = namecheck() + namecheck2() + emailcheck() + addresscheck() + addresscheck2() + statecheck() + postcodecheck() + phonecheck() + productcheck() + desrciption_check() ;
+            var check = namecheck() + namecheck2() + emailcheck() + addresscheck() + addresscheck2() + 
+                statecheck() + postcodecheck() + phonecheck() + productcheck() + desrciption_check() ;
 
             if (check == "") {
                 return true;
