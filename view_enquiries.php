@@ -12,14 +12,14 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "enquiryform";
+
 $conn = mysqli_connect($servername, $username, $password, $dbname);
-$select = "SELECT * FROM enquiry";
+$select = "SELECT * FROM enquiry ORDER BY id DESC";
 $result = mysqli_query($conn, $select) or die(mysqli_error($conn));
 
 echo "
 <table  class='content-table' style='margin-left:140px;'>
 <tr>
-<th>ID</th>
 <th>First Name</th>
 <th>Lastname</th>
 <th>E-mail</th>
@@ -32,9 +32,10 @@ echo "
 <th>Message</th>
 </tr>
 ";
-while (null !== ($row = mysqli_fetch_assoc($result))) {
+
+while (($row = mysqli_fetch_assoc($result)) !== null) {
     echo "
-<tr><td>{$row['id']}</td>
+<tr>
 <td>{$row['firstname']}</td>
 <td>{$row['lastname']}</td>
 <td>{$row['email']}</td>

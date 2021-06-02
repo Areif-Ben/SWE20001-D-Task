@@ -1,4 +1,4 @@
-/*Absar's part*/
+
 
 html
 {
@@ -38,12 +38,12 @@ body
 a {
     text-decoration: none;
 }
-/*End of absar's part*/
+
 
 
 .comlogo {
     float: left;
-     background: rgb(18, 21, 24, 0.6);
+    background: rgb(18, 21, 24, 0.6);
     padding-left: 30px;
     padding-top: 3px;
     height: 100px;
@@ -57,7 +57,7 @@ a {
     height: 100px;
 }
 
-/*Branden's part*/
+
 #main-nav img {
     background: rgb(18, 21, 24, 0.6);
     padding-left: 30px;
@@ -128,13 +128,6 @@ width: 101%;
   font-size: 12px;
 }
 
-/*end of Branden's part*/
-
-
-
-
-
-/*Benjamin's part*/
 #slider {
    margin: 0 auto;
    width: 1750px;
@@ -149,7 +142,7 @@ width: 101%;
 #slider label {
    cursor:pointer;
    text-decoration: none;
-}
+} 
 #slides {
    padding: 10px;
    border: 3px solid #282424;
@@ -315,7 +308,7 @@ width: 101%;
 }
 
 
-/*Grid index*/
+
 .grid1 {
   margin: 300px;
   display: grid;
@@ -400,7 +393,7 @@ a.button {
 
 }
 
-/*button on slideshow*/
+
 .btn{
     font-family: "Roboto", sans-serif;
     font-size: 18px;
@@ -425,12 +418,12 @@ a.button {
     transform: scale(1.1);
     transform: scale(1.1);
 }
-/*end of Benjamin's part*/
 
 
 
 
-/*Branden's part*/
+
+
 .footer {
    width: 100vw;
     display: block;
@@ -520,13 +513,7 @@ a.button {
     width: 100%;
     padding-top: 20px;
 }
-/*end of Branden's part*/    
 
-   
-
-
-/*Benjamin's part*/
-/*product type selection page*/
 
 .textinproduct{
     display:flex;
@@ -545,7 +532,7 @@ a.button {
 
 
 
-/*Producttypepage*/
+
 .mainselection{
 	width: 100%;
 	height: 100vh;
@@ -586,6 +573,7 @@ a.button {
 	transform: skewY(15deg);
 }
 
+/*Image transition when entering page*/
 .mainselection .card img{
 	width: 80%;
 	position: absolute;
@@ -596,6 +584,7 @@ a.button {
 	transition: .3s all ease;
 }
 
+/*This will rotate the card when its mouse hovers over it.*/
 .mainselection .card:hover img{
 	width: 60%;
 	transform: translate(-50%,0) rotate(15deg);
@@ -652,7 +641,7 @@ a.button {
 }
 
 
-/*Disclaimer page*/
+
 .section2{
     padding: 0 630px;
     background: url(../styles/images/disclaimerbg.jpg);
@@ -696,7 +685,7 @@ a.button {
 
 
 
-/*subcategory products*/
+
 .subcategory {
   margin: 20px;
   align-content: center;
@@ -735,7 +724,7 @@ a.button {
   cursor: pointer;
 }
 
-/*product page*/
+
 .grid-container {
     max-width: 1500px;
 }
@@ -1234,14 +1223,10 @@ div.parent .two {
   list-style: none;
   position: relative;
 }
-/*End of Benjamin's part*/
 
 
 
-
-/*Crystal's part*/
-    
-/*enquiry form*/    
+/*enquiry*/
 ::placeholder { 
   color: #FFFF;
   opacity: 1; 
@@ -1346,7 +1331,7 @@ legend
 }
 
 
-/* Reset Select */
+
 select {
   appearance: none;
   outline: 0;
@@ -1357,7 +1342,7 @@ select {
 
 }
 
-/* Custom Select */
+
 .select {
   position: relative;
   display: flex;
@@ -1375,7 +1360,8 @@ select {
   cursor: pointer;
 
 }
-/* Arrow */
+
+
 .select::after {
   content: '\25BC';
   position: absolute;
@@ -1389,12 +1375,12 @@ select {
   transition: .25s all ease;
   transition: .25s all ease;
 }
-/* Transition */
+
 .select:hover::after {
   color: #f39c12;
 }
 
-/*Thank u for enquiry pagee*/
+
 .mainenquiry{
 	position: relative;
 	height:100vh;
@@ -1484,13 +1470,12 @@ select {
 	border:1px solid #017fb5 ;
 	color:rgba(255, 255, 255, 0.95);
 }
-/*Crystal's part end*/
 
 
 
-/*Branden's part*/
+
+
 /*about page*/
-
 #about-us{ 
     margin-top: 50px;
     display:block;
@@ -1524,12 +1509,11 @@ select {
 
 #about-us #about-intro img{
     margin-left: 500px;}
-/*Branden's part end*/
 
 
 
-/*Crystal's part*/
-/*my team*/
+
+
 .containerteam{
 	max-width:1140px;
 	margin: 0 auto;
@@ -1609,7 +1593,7 @@ select {
 
 
 
-/*i em trying to make it movee responsive*/
+
 
 @media(max-width: 991px){
 	.team .card{
@@ -1623,11 +1607,11 @@ select {
 		width:100%;
 	}
 }
-/*end of Crystal's part*/
 
 
 
-/*Absar's part*/
+
+
 /*aboutmepage*/
 .containergoreng {
   width: 400px;
@@ -1743,9 +1727,7 @@ select {
 
 
    
-/*end of Absar's part*/
-
-
+/*end of about us*/
 .ghostbody{
   margin: 0;
   padding-bottom: 50px;
@@ -1868,7 +1850,7 @@ select {
 
 
 
-/*benresume*/
+/*resume*/
 
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -1957,7 +1939,6 @@ select {
 	}
 	
 /* Main tags */
-
 .resumebody {
 	background: url(../styles/images/dark_wall.png) repeat;
 	margin: 0;
@@ -2011,7 +1992,6 @@ blockquote, p , a, li {
 	}
 
 /* Containers size */
-
 #main_container {
 	width: 960px;
 	margin: 0 auto;
@@ -2051,7 +2031,6 @@ blockquote, p , a, li {
 	}
 
 /* HEADER */
-
 .logotype_name{
 	text-transform: uppercase;
 	font-size: 32px;
@@ -2117,7 +2096,6 @@ blockquote, p , a, li {
 		}
 		
 /* LEFT NAV */
-
 #left_nav h2 {
 	margin: 0;
 	font-size: 24px;
